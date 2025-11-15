@@ -1,0 +1,4 @@
+.searchbar { display:flex; gap:8px; justify-content:center; }
+.searchbar__input { flex:1; max-width:520px; }
+.searchbar__btn { background:var(--primary); color:#fff; border:none; }
+@media (max-width:520px){ .searchbar { flex-direction:column; } }

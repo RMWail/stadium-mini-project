@@ -1,0 +1,3 @@
+.filters { display:flex; gap:8px; margin:12px 0 20px; }
+.filters__input { max-width:240px; }
+@media (max-width:640px){ .filters { flex-direction:column; } .filters__input { max-width:none; } }

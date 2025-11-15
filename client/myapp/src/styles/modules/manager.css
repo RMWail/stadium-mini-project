@@ -1,0 +1,70 @@
+.mgr__layout { display: grid; grid-template-columns: 240px 1fr; min-height: 100vh; }
+
+/*Sidebar styling : */
+
+.mgr__sidebar {
+   background: #0f172a; 
+   color: #fff; 
+   padding: 16px;
+   position: sticky; 
+   top: 0; 
+   align-self: start;
+   height: 100vh;
+     }
+
+.mgr__brand { 
+  font-weight: 700; 
+  margin-bottom: 16px;
+ }
+.mgr__nav { 
+  display: grid; 
+  gap: 8px; 
+}
+.mgr__link { 
+  color: #cbd5e1;
+   text-decoration: none; 
+   padding: 10px 12px; 
+   border-radius: 8px; 
+   display: block; 
+  }
+
+.mgr__link.active, .mgr__link:hover { 
+  background: #1e293b; 
+  color: #fff; 
+}
+
+.mgr__navBody {
+
+  margin-top: 600px;
+}
+
+
+
+
+
+
+.mgr__content { padding: 20px; background: #f8fafc; }
+.mgr__section { max-width: 85%; margin: 0 auto; }
+.mgr__grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+.mgr__card { background: #fff; border: 1px solid #e5e7eb; border-radius: 10px; padding: 16px; }
+.mgr__card-title { font-weight: 600; margin-bottom: 8px; }
+.mgr__card-line { color: #475569; font-size: 14px; }
+.mgr__status { padding: 4px 8px; border-radius: 999px; font-size: 12px; display: inline-block; margin-top: 8px; }
+.mgr__status--1 {/* background: #dcfce7;*/ color: #15803d; }
+.mgr__status--0 {/* background: #dcfce7;*/ color: #f59e0b; }
+.mgr__status---1 { /*background: #fee2e2;*/ color: #b91c1c; }
+.mgr__toolbar { margin-bottom: 12px; }
+.mgr__table { display: grid; gap: 6px; }
+.mgr__thead, .mgr__trow { display: grid; grid-template-columns: 1fr 1.5fr 1fr 1.5fr 1.5fr 1fr 1.5fr; gap: 8px; align-items: center; }
+.mgr__thead { font-weight: 600; color: #334155; }
+.mgr__trow { background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; padding: 10px; }
+.mgr__form { display: grid; gap: 12px; max-width: 640px; }
+.mgr__field { display: grid; gap: 6px; }
+.mgr__field input, .mgr__field select { padding: 10px 12px; border: 1px solid #e5e7eb; border-radius: 8px; }
+
+.mgr__btn:disabled { background: #7dd3fc; cursor: not-allowed; }
+
+@media (max-width: 1200px) {
+  .mgr__layout { grid-template-columns: 1fr; }
+  .mgr__sidebar { height: auto; position: static; border-bottom: 1px solid #1e293b; }
+}

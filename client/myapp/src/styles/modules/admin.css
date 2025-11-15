@@ -1,0 +1,77 @@
+.adm__layout { display: grid; grid-template-columns: 240px 1fr; min-height: 100vh; }
+.adm__sidebar { 
+  background: #111827; 
+  color: #fff; 
+  padding: 40px; 
+  position: sticky; 
+  top: 0; 
+  align-self: start; 
+  height: 100vh; 
+}
+.adm__brand { 
+  font-weight:bolder;
+  font-size: large; 
+  margin-bottom: 6px;
+ }
+.adm__nav { 
+  font-weight: bold;
+  display: grid; 
+  gap: 30px;
+ }
+.adm__link {
+   color: #d1d5db; 
+   text-decoration: none; 
+   padding: 10px 12px; 
+   border-radius: 8px;
+    display: block; 
+  }
+.adm__link.active, .adm__link:hover { 
+  background: #1f2937; 
+  color: #fff; 
+}
+.adm__content { 
+  padding: 20px; 
+  background: #f3f4f6; 
+}
+.adm__section { 
+  max-width: 1100px; 
+  margin: 0 auto; 
+}
+.adm__grid { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); 
+  gap: 16px; 
+}
+.adm__grid2 { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 16px; 
+}
+.adm__card { 
+  background: #fff; 
+  border: 1px solid #e5e7eb; 
+  border-radius: 10px; 
+  padding: 16px; 
+}
+.adm__metric { font-size: 28px; font-weight: 700; }
+.adm__label { color: #4b5563; }
+.adm__table { display: grid; gap: 6px; }
+.adm__thead, .adm__trow { display: grid; grid-template-columns: 1.2fr 2fr 1.2fr 1.2fr 1fr; gap: 8px; align-items: center; }
+.adm__thead { font-weight: 600; color: #374151; }
+.adm__trow { background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; padding: 10px; }
+.adm__status { padding: 4px 8px; border-radius: 999px; font-size: 12px; display: inline-block; }
+.adm__status--confirmed { background: #dcfce7; color: #15803d; }
+.adm__status--cancelled { background: #fee2e2; color: #b91c1c; }
+.adm__form { display: grid; gap: 12px; }
+.adm__field { display: grid; gap: 6px; }
+.adm__field input, .adm__field select { padding: 10px 12px; border: 1px solid #e5e7eb; border-radius: 8px; }
+.adm__row { display: inline-flex; gap: 8px; align-items: center; }
+.adm__btn { background: #3b82f6; color: #fff; border: 0; padding: 10px 14px; border-radius: 8px; cursor: pointer; }
+.adm__btn--ghost { background: #e5e7eb; color: #111827; }
+.adm__btn--danger { background: #ef4444; }
+.adm__btn--sm { padding: 6px 10px; font-size: 14px; }
+
+@media (max-width: 900px) {
+  .adm__layout { grid-template-columns: 1fr; }
+  .adm__sidebar { height: auto; position: static; border-bottom: 1px solid #1f2937; }
+}
